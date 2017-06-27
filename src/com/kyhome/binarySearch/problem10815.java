@@ -1,4 +1,4 @@
-package com.kyhome.failproblem;
+package com.kyhome.binarySearch;
 
 import java.util.*;
 import java.io.*;
@@ -6,14 +6,16 @@ import java.io.*;
 public class problem10815 {
     public static void main(String args[]) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(bf.readLine());
+        @SuppressWarnings("unused")
+		int n = Integer.parseInt(bf.readLine());
         StringTokenizer st = new StringTokenizer(bf.readLine());
         HashSet<Integer> d = new HashSet<Integer>();
         while (st.hasMoreTokens()) {
             int num = Integer.parseInt(st.nextToken());
             d.add(num);
         }
-        int m = Integer.parseInt(bf.readLine());
+        @SuppressWarnings("unused")
+		int m = Integer.parseInt(bf.readLine());
         st = new StringTokenizer(bf.readLine());
         StringBuilder sb = new StringBuilder();
         while (st.hasMoreTokens()) {
