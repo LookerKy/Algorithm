@@ -8,7 +8,6 @@ public class problem10989 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		System.out.println("Ω√¿€");
 		int numcount[] = new int[10001];
 		for(int i =0; i<n; i++){
 			int j = sc.nextInt();
