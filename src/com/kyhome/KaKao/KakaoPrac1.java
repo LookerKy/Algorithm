@@ -1,26 +1,44 @@
 package com.kyhome.KaKao;
 
+
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class KakaoPrac1 {
+public class Test {
 	public static void main(String[] args) {
-		int [] a = {1000000,3000000,3000000};
-		
-		HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
-		for(int i=0; i<3; i++) {
-			if(map.containsKey(a[i]) == false) {
-				map.put(a[i],1);
+		int [][] v = {{100000,300000},{5000000,300000},{5000000,2000000}};
+		int difx =0;
+		int dify =0;
+		HashMap<Integer, Integer> mapX = new HashMap<Integer,Integer>();
+		HashMap<Integer, Integer> mapY = new HashMap<Integer,Integer>();
+		for(int x =0; x<3; x++) {
+			if(mapX.containsKey(v[x][0])==false) {
+				mapX.put(v[x][0], 1);
 			}else {
-				map.put(a[i], map.get(a[i])+1);
+				mapX.put(v[x][0], mapX.get(v[x][0])+1);
 			}
 		}
-		Iterator<Integer> iterator = map.keySet().iterator();
-		while(iterator.hasNext()) {
-			int key = iterator.next();
-			System.out.println("key =" + key);
-			System.out.println("value= "+map.get(key));
+		Iterator<Integer> iteratorX = mapX.keySet().iterator();
+		while(iteratorX.hasNext()) {
+			int key = iteratorX.next();
+			if(mapX.get(key) ==1) {
+				difx=key;
+			}
 		}
-		
+		for(int y =0; y<3; y++) {
+			if(mapY.containsKey(v[y][1])==false) {
+				mapY.put(v[y][1], 1);
+			}else {
+				mapY.put(v[y][1], mapY.get(v[y][1])+1);
+			}
+		}
+		Iterator<Integer> iteratorY = mapY.keySet().iterator();
+		while(iteratorY.hasNext()) {
+			int key = iteratorY.next();
+			if(mapY.get(key) ==1) {
+				dify=key;
+			}
+		}
+		System.out.println(difx + " " + dify);
 	}
 }
