@@ -5,13 +5,14 @@ import java.io.*;
 
  
 public class CountingSort {
-    int[] numbers; //ÀÔ·ÂµÈ ¼ýÀÚ
-    int[] countArr;//¼ýÀÚ ¼¼±â
+    int[] numbers; //ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½
+    int[] countArr;//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
   
     int max = 0;
     int index = 0;
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    void inputNumbers() throws IOException {//¼ýÀÚ ÀÔ·ÂÇÏ±â
+    
+    void inputNumbers() throws IOException {//ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï±ï¿½
         //Scanner sc = new Scanner(System.in);
         //int size = sc.nextInt();
  
@@ -30,11 +31,11 @@ public class CountingSort {
     void sort() throws IOException {
         inputNumbers();
         int maxNumber = max;
-        countArr = new int[maxNumber + 1]; //0-maxNumber+1¸¸Å­ »ý¼º
+        countArr = new int[maxNumber + 1]; //0-maxNumber+1ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½
    
  
         for (int i = 0; i < numbers.length; i++) {
-            //ÇØ´çÇÏ´Â ¼ýÀÚ Ä«¿îÅÍ
+            //ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½ï¿½ï¿½
             countArr[numbers[i]]++;
         }
         for (int i = 0; i < countArr.length; i++) {
@@ -47,7 +48,5 @@ public class CountingSort {
  
     public static void main(String[] args) throws IOException {
         new CountingSort().sort();
- 
- 
     }
 }

@@ -3,8 +3,8 @@ package com.kyhome.Collection;
 import java.util.Scanner;
 
 public class problem10989 {
-	/********* Âü°í: °è¼öÁ¤·Ä ***********/
-	/**************Âü°ísite: http://nhs0912.tistory.com/58******************/
+	/*********ì •ë ¬ë°©ë²• : ê³„ìˆ˜ì •ë ¬ ***********/
+	/**************ì°¸ê³ site: http://nhs0912.tistory.com/58******************/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
