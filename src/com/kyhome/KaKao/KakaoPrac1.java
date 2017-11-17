@@ -4,7 +4,7 @@ package com.kyhome.KaKao;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class Test {
+public class KakaoPrac1 {
 	public static void main(String[] args) {
 		int [][] v = {{100000,300000},{5000000,300000},{5000000,2000000}};
 		int difx =0;
