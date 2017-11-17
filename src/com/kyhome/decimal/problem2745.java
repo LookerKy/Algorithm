@@ -49,5 +49,6 @@ public class problem2745 {
 		}
 		int result = ten;
 		System.out.println(result);
+		
 	}
 }
