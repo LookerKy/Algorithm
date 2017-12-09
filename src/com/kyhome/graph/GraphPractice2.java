@@ -60,5 +60,14 @@ public class GraphPractice2 {
 5 4
 4 3
 4 6
+
+6 7
+1 2
+1 5
+2 3
+2 5
+5 4
+4 3
+4 6
 	  */
 }
