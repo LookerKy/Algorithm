@@ -23,13 +23,22 @@ public class ConnectedComponent {
 		b = find(b);
 		if(a != b){
 			if(size[a] <= size[b]){
-				root[a] = b;  
+				root[a] = b ;  
 				size[b] += size[a];
 			}else{
 				root[b] = a;
 				size[a] += size[b];
 			}
+			for(int i = 1; i<root.length; i++) {
+				System.out.print(root[i] + " ");
+			}
+			System.out.println("");
+			for(int i = 1; i<root.length; i++) {
+				System.out.print(size[i] + " ");
+			}
+			System.out.println("");
 		}
+		
 	}
 	
 	public static void main(String[] args) throws IOException {
