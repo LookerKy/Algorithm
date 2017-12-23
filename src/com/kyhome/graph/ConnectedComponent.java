@@ -30,11 +30,11 @@ public class ConnectedComponent {
 				size[a] += size[b];
 			}
 			for(int i = 1; i<root.length; i++) {
-				System.out.print(root[i] + " ");
+				System.out.print("root: "+ root[i] + " ");
 			}
 			System.out.println("");
 			for(int i = 1; i<root.length; i++) {
-				System.out.print(size[i] + " ");
+				System.out.print("size: "+size[i] + " ");
 			}
 			System.out.println("");
 		}

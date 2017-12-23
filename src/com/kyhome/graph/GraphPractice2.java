@@ -11,12 +11,12 @@ import java.util.TreeMap;
 public class GraphPractice2 {
 	ArrayList<Integer>[] list ;
 	public static void main(String[] args) throws Exception {
-
 		adjacencyList();
 		addAdjacencyList();
 	}
 	
 	/*가중치가 없는 인접리스트*/
+	@SuppressWarnings("unchecked")
 	public static void adjacencyList() throws Exception {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		String graph[] = bf.readLine().split(" ");

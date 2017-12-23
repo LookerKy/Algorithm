@@ -15,9 +15,9 @@ public class Problem5567wrong {
 		
 		int n = Integer.parseInt(bf.readLine());
 		int m = Integer.parseInt(bf.readLine());
-		boolean list[][] = new boolean[n+1][n+1];
-		boolean check[] = new boolean[n+1];
-		ArrayList<Integer> result = new ArrayList<Integer>();
+		boolean list[][] = new boolean[n+1][n+1]; //graph
+		boolean check[] = new boolean[n+1]; // check
+		ArrayList<Integer> result = new ArrayList<Integer>(); // 流立利栏肺 楷搬等 模备 list
 		int cnt = 0;
 		for(int i =0; i <m; i++) {
 			StringTokenizer st  = new StringTokenizer(bf.readLine());
@@ -28,12 +28,9 @@ public class Problem5567wrong {
 				cnt++;
 				check[v] = true;
 			}
-			
 			list[u][v] = true; list[v][u]=true;
-			
 		}
 		for(int i : result) {
-			
 			for(int j = 2; j<=n; j++) {
 				if(list[i][j] && !check[j]) {
 					cnt++;
