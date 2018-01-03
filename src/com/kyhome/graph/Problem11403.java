@@ -54,7 +54,7 @@ public class Problem11403 {
 		for (int j = 0; j < list.get(next).size(); j++) {
 			int next_t = list.get(next).get(j);
 			if (result[start][next_t] != 1) {
-				result[start][next_t] = 1;
+				result[start][next_t] = 1; 
 				dfs(list, result, start, next_t);
 				
 			}
