@@ -1,21 +1,25 @@
 package com.kyhome.inoutput;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Problem11718 {
-	public static void main(String[] args)throws IOException{
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		StringBuffer sb = new StringBuffer();
-		while(true) {
-			String s = bf.readLine();
-			if(s.equals(""))
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		ArrayList<String> sList = new ArrayList<String>();
+		
+		while(sc.hasNextLine()) {
+			String input = sc.nextLine();
+			if(input == null || input.isEmpty()) {
 				break;
-			else {
-				sb.append(s+"\n");
 			}
+			sList.add(input);
 		}
-		System.out.println(sb.toString());
+		
+		for(String x : sList) {
+			System.out.println(x);
+		}
+		
+		sc.close();
 	}
 }
